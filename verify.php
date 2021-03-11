@@ -4,11 +4,9 @@ if( isset( $_POST['refid'] ) ){
 }else{
     $refid = 0;
 }
-if( isset( $_POST['amount'] ) ){
-    $Amount = $_POST['amount'];
-}else{
-    $Amount = 1000;
-}
+
+/* بجای 1000 مبلغ پرداختی خود را قرار دهید، به تومان */
+$Amount = 1000; // toman
 
 /* توکن دریافتی از سایت payping.ir | بجای Token توکن خود را قرار دهید. */
 $TokenCode = "Token";

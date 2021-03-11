@@ -1,11 +1,6 @@
 <?php
-if( isset( $_POST['Amount'] ) ){
-    $amount = $_POST['Amount'];
-}else{
-    $amount = 1000;
-}
-
-intval( $amount );
+/* دریافت مبلغ از فرم ساخته شده. */
+$amount = intval( $_POST['Amount'] );
 
 /* clientRefId: در صورت استفاده در حالت غیر دمو بهتر است شماره فاکتور در نظر گرفته شود. */
 if( isset( $_POST['clientRefId'] ) ){
