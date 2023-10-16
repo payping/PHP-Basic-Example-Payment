@@ -65,7 +65,7 @@ try{
     curl_close( $curl );
 
     if( $err ){
-        $msg = 'کد خطا: CURL#' . $er;
+        $msg = 'کد خطا: CURL#' . $err;
         $erro = 'در اتصال به درگاه مشکلی پیش آمد.';
         return false;
     }else{
